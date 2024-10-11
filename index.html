@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haru - Adicionar Produtos</title>
+    <link rel="shortcut icon" href="harumi.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="header__logo">haru.</h1>
+    </header>
+    <main>
+        <section class="adicionar__produto">
+            <h2 class="adicionar__produto__texto">Adicionar Produto</h2>
+            <form id="formulario__produtos">
+                <input type="text" id="nome" placeholder="Nome" required>
+                <input type="text" id="preco" placeholder="Preço" required>
+                <input type="text" id="imagem" placeholder="Imagem" required>
+
+                <div class="buttons">
+                    <button class="botao__adicionar" type="submit" id="guardar">Adicionar</button>
+                    <button class="botao__limpar" type="reset" id="limpar">Limpar</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="meus__produtos">
+            <h2 id="meus__produtos__titulo">Meus Produtos</h2>
+            <div id="produtos__container" class="produtos__container"></div>
+        </section>
+        
+        
+    </main>
+
+    <footer>
+        <p class="footer__logo">harumi.</p>
+        <p class="footer__info">Desenvolvido por <a href="https://portifolio-isatutumi-projects.vercel.app/" class="footer__link" target="_blank">Harumi Tutumi</a></p>
+        <p class="footer__dados">Alura LATAM - 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
